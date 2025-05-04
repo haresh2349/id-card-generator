@@ -1,6 +1,5 @@
 import { Box } from "@mui/material"
 import Navbar from "../../components/navbar/Navbar"
-import { Welcome } from "./components/welcome/Welcome"
 import { IDCardForm } from "./components/create-card/IDCardForm"
 import { IDCardPreview } from "../../components/id-card-preview/IDCardPreview"
 import { useState } from "react"
@@ -29,7 +28,6 @@ export const Home = () => {
 
     return <Box sx={{width:"100vw",height:"100vh",position:"relative"}}>
         <Navbar/>
-        {/* <Welcome/> */}
         <Box sx={{display:"flex",justifyContent:"space-between",position:"absolute",top:"80px",left:0,right:0}}>
             <IDCardForm formData={formData} setFormData={setFormData} setIsDataValidated={setIsDataValidated}/>
             <IDCardPreview isDataValidated={isDataValidated} previewData={formData}/>

@@ -1,6 +1,6 @@
 import { Box, FormControl, InputLabel, MenuItem, Select, SelectChangeEvent, TextField, FormHelperText, Button } from "@mui/material"
 import { IdCardFormData } from "../../../../types/userDetailsType"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
 interface IDCardFormProps {
   formData: IdCardFormData,
